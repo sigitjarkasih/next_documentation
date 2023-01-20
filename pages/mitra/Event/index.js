@@ -14,7 +14,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import styles from "../../../styles/Home.module.css";
 import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
-import APIEventList from "../../../config/api/Event/list";
+import APIEventList from "../../../config/api/event/list";
 import { ListSubheader } from "@mui/material";
 
 // export async function getServerSideProps(context) {
