@@ -1,5 +1,5 @@
 import axios from "axios";
-import { url_service } from "../../url";
+import { url_service } from "../url";
 // import Cookies from "universal-cookie";
 
 const APIDompetMadrasahCreate = async (data) => {
@@ -12,7 +12,8 @@ const APIDompetMadrasahCreate = async (data) => {
       "Content-Type": "application/json",
       //   Authorization: "BASIC " + token,
     },
-    url: `${url_service}/dompet-madrasah/create/`,
+    url: `https://documentation.dgmall.id/api/v1/dompet-madrasah/create/`,
+    // url: `${url_service}/dompet-madrasah/create/`,
     data: data,
   })
     .then(function (response) {

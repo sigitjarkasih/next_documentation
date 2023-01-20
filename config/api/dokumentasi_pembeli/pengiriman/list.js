@@ -1,18 +1,15 @@
 import axios from "axios";
-import { url_service } from "../../api/url";
-// import Cookies from "universal-cookie";
+import { url_service } from "../../url";
 
-const APIStaycationList = async (data) => {
-//   const cookies = new Cookies();
-//   const token = cookies.get("TOKEN");
+const APIPembeliPengirimanList = async (data) => {
+
   const result = await axios({
     method: "post",
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-    //   Authorization: "BASIC " + token,
     },
-    url: `${url_service}/staycation/list/`,
+    url: `${url_service}/pembeli-pengiriman/list/`,
     data: data,
   })
     .then(function (response) {
@@ -25,4 +22,4 @@ const APIStaycationList = async (data) => {
   return result;
 };
 
-export default APIStaycationList;
+export default APIPembeliPengirimanList;

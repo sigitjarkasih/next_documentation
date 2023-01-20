@@ -184,7 +184,7 @@ export default class enjual extends Component {
                   display: "flex",
                 }}
               >
-                <Link href="/penjual/akunkemanan/">
+                <Link href="/penjual/akunkeamanan/">
                   <div
                     style={{
                       display: "flex",
@@ -218,7 +218,7 @@ export default class enjual extends Component {
                     </div>
                   </div>
                 </Link>
-                <Link href="/penjualan/prosespesanan/">
+                <Link href="/penjual/prosespesanan/">
                   <div
                     style={{
                       display: "flex",
@@ -318,7 +318,7 @@ export default class enjual extends Component {
               {/* BAWAH */}
               <div
                 style={{
-                  justifyContent: "space-between",
+                  justifyContent: "space-evenly",
                   paddingBottom: "25px",
                   display: "flex",
                 }}

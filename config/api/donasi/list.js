@@ -1,5 +1,5 @@
 import axios from "axios";
-import { url_service } from "../../url";
+import { url_service } from "../../api/url";
 // import Cookies from "universal-cookie";
 
 const APIDonasiList = async (data) => {

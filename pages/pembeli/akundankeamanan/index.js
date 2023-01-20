@@ -14,7 +14,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import styles from "../../../styles/Home.module.css";
 import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
-import APIPenjualFiturList from "../../../config/api/dokumentasi_penjual/fiturpenjual/list";
+import APIPembeliAkunList from "../../../config/api/dokumentasi_pembeli/akundankeamanan/list";
 
 export default class Article extends Component {
   constructor(props) {
@@ -30,7 +30,7 @@ export default class Article extends Component {
   }
 
   getData = async () => {
-    const resp = await APIPenjualFiturList({
+    const resp = await APIPembeliAkunList({
     });
     if (resp.status === 200) {
       this.setState({

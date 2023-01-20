@@ -86,7 +86,7 @@ function Navbar() {
         >
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              <Link href="/mitra">
+              <Link href="/pembeli">
               {/* <a target="_blank" href="/" rel="noreferrer"> */}
                 <Image
                   src="/LogoDgmall.png"

@@ -14,7 +14,20 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import styles from "../../../styles/Home.module.css";
 import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
-import APIPenjualFiturList from "../../../config/api/dokumentasi_penjual/fiturpenjual/list";
+import APIStaycationList from "../../../config/api/staycation/list";
+import { ListSubheader } from "@mui/material";
+
+// export async function getServerSideProps(context) {
+//   const resp = await APIDompetMadrasahList({
+//     id: context.query.id,
+//   });
+
+//   const data = await resp.data;
+
+//   return {
+//     props: { data },
+//   };
+// }
 
 export default class Article extends Component {
   constructor(props) {
@@ -30,7 +43,8 @@ export default class Article extends Component {
   }
 
   getData = async () => {
-    const resp = await APIPenjualFiturList({
+    const resp = await APIStaycationList({
+      //   user_id: this.context.user.user_id,
     });
     if (resp.status === 200) {
       this.setState({
@@ -51,9 +65,15 @@ export default class Article extends Component {
 
   componentDidMount() {
     this.getData();
+
+    // console.log(this.props.data);
+    // console.log(typeof this.props.data);
+    // console.log(this.props.data[3].title);
+    // this.setState({ title: this.props.data[3].title });
   }
 
   render() {
+    // const data1 = this.state.title;
     return (
       <div
         style={{
