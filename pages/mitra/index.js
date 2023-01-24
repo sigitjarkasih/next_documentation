@@ -205,7 +205,7 @@ export default class enjual extends Component {
                     </div>
                   </div>
                 </Link>
-                <Link href="/penjualan/Donasi/">
+                <Link href="/mitra/Donasi/">
                   <div
                     style={{
                       display: "flex",
@@ -237,7 +237,7 @@ export default class enjual extends Component {
                     </div>
                   </div>
                 </Link>
-                <Link href="/penjual/Staycation/">
+                <Link href="/mitra/Staycation/">
                   <div
                     style={{
                       display: "flex",
@@ -269,7 +269,7 @@ export default class enjual extends Component {
                     </div>
                   </div>
                 </Link>
-                <Link href="/penjual/Event/">
+                <Link href="/mitra/Event/">
                   <div
                     style={{
                       display: "flex",
@@ -310,7 +310,7 @@ export default class enjual extends Component {
                   display: "flex",
                 }}
               >
-                <Link href="/penjual/fiturpenjualan/">
+                <Link href="/mitra/fiturpenjualan/">
                   <div
                     style={{
                       display: "flex",
@@ -342,7 +342,7 @@ export default class enjual extends Component {
                     </div>
                   </div>
                 </Link>
-                <Link href="/penjual/lainnya/">
+                <Link href="/mitra/lainnya/">
                   {" "}
                   <div
                     style={{
@@ -375,7 +375,7 @@ export default class enjual extends Component {
                     </div>
                   </div>
                 </Link>
-                <Link href="/">
+                <Link href="/mitra/laporanpenyalahgunaan">
                   <div
                     style={{
                       display: "flex",
