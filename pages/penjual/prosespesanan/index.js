@@ -36,7 +36,6 @@ export default class Article extends Component {
         data: resp.data,
       });
     }
-    console.log(resp.data);
   };
 
   goToDetail = (id) => {
@@ -115,7 +114,7 @@ export default class Article extends Component {
             </Drawer>
           </Box>
 
-          <div style={{ marginLeft: 275 }}>
+          <div style={{ marginLeft: 275, marginRight: 20 }}>
             <h1 align="center">{this.state.judul}</h1>
             <div>
               {this.state.image_link != null ? (
@@ -130,9 +129,9 @@ export default class Article extends Component {
                 <></>
               )}
             </div>
-            <div>{this.state.deskripsi}</div>
+            <div style={{ textAlign: "justify" }}>{this.state.deskripsi}</div>
 
-            <div>
+            {/* <div>
               <h5>Apakah Artikel ini membantu?</h5>
               <MenuItem>
                 <Button
@@ -151,7 +150,7 @@ export default class Article extends Component {
                   Tidak
                 </Button>
               </MenuItem>
-            </div>
+            </div> */}
 
             <hr />
 

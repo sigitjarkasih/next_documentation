@@ -116,13 +116,12 @@ export default class Article extends Component {
             </Drawer>
           </Box>
 
-          <div style={{ marginLeft: 275 }}>
+          <div style={{ marginLeft: 275, marginRight: 20 }}>
             <h1 align="center">{this.state.judul}</h1>
-            <div>
+            <div style={{ textAlign: "center" }}>
               {this.state.image_link != null ? (
                 <Image
                   src={url_media_local + this.state.image_link}
-                  align="center"
                   width={250}
                   height={250}
                   alt="foto"
@@ -131,7 +130,7 @@ export default class Article extends Component {
                 <></>
               )}
             </div>
-            <div>{this.state.deskripsi}</div>
+            <div style={{ textAlign: "justify" }}>{this.state.deskripsi}</div>
 
             <div>
               <h5>Apakah Artikel ini membantu?</h5>

@@ -12,7 +12,6 @@ import WalletIcon from "@mui/icons-material/Wallet";
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import HotelIcon from "@mui/icons-material/Hotel";
 import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
-import APIDompetMadrasahList from "../../config/api/dompetmadrasah/list";
 import React, { Component } from "react";
 
 export default class enjual extends Component {
@@ -205,7 +204,7 @@ export default class enjual extends Component {
                     </div>
                   </div>
                 </Link>
-                <Link href="/penjualan/Donasi/">
+                <Link href="/mitra/Donasi/">
                   <div
                     style={{
                       display: "flex",
@@ -237,7 +236,7 @@ export default class enjual extends Component {
                     </div>
                   </div>
                 </Link>
-                <Link href="/penjual/Staycation/">
+                <Link href="/mitra/Staycation/">
                   <div
                     style={{
                       display: "flex",
@@ -269,7 +268,7 @@ export default class enjual extends Component {
                     </div>
                   </div>
                 </Link>
-                <Link href="/penjual/Event/">
+                <Link href="/mitra/Event/">
                   <div
                     style={{
                       display: "flex",

@@ -1,4 +1,5 @@
 import {
+  Button,
   IconButton,
   InputAdornment,
   InputBase,
@@ -26,8 +27,18 @@ export default class enjual extends Component {
     super(props);
     this.state = {
       nano: null,
+      // btnSearch: document.getElementById("btnSearch"),
+      // btnClear: document.getElementById("btnClear"),
+      // search: document.getElementsByName("keyword")[0],
+      // data_section: document.getElementsByClassName("data")[0],
     };
   }
+
+  btnSearch(click, event) {
+    searchData();
+  }
+
+
   render() {
     return (
       <div>
@@ -71,7 +82,13 @@ export default class enjual extends Component {
                     // onChange={handleChange("weight")}
                     endAdornment={
                       <InputAdornment position="end">
-                        <SearchIcon />
+                        <Button
+                          // onClick={}
+                        >
+                          <SearchIcon />
+                        </Button>
+                        {/* <SearchIcon 
+                        /> */}
                       </InputAdornment>
                     }
                     aria-describedby="outlined-weight-helper-text"

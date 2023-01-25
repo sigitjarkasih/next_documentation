@@ -15,19 +15,6 @@ import styles from "../../../styles/Home.module.css";
 import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
 import APIDonasiList from "../../../config/api/donasi/list"
-import { ListSubheader } from "@mui/material";
-
-// export async function getServerSideProps(context) {
-//   const resp = await APIDompetMadrasahList({
-//     id: context.query.id,
-//   });
-
-//   const data = await resp.data;
-
-//   return {
-//     props: { data },
-//   };
-// }
 
 export default class Article extends Component {
   constructor(props) {
@@ -44,7 +31,6 @@ export default class Article extends Component {
 
   getData = async () => {
     const resp = await APIDonasiList({
-      //   user_id: this.context.user.user_id,
     });
     if (resp.status === 200) {
       this.setState({
@@ -65,15 +51,9 @@ export default class Article extends Component {
 
   componentDidMount() {
     this.getData();
-
-    // console.log(this.props.data);
-    // console.log(typeof this.props.data);
-    // console.log(this.props.data[3].title);
-    // this.setState({ title: this.props.data[3].title });
   }
 
   render() {
-    // const data1 = this.state.title;
     return (
       <div
         style={{
@@ -136,13 +116,12 @@ export default class Article extends Component {
             </Drawer>
           </Box>
 
-          <div style={{ marginLeft: 275 }}>
+          <div style={{ marginLeft: 275, marginRight: 20 }}>
             <h1 align="center">{this.state.judul}</h1>
-            <div>
+            <div style={{ textAlign: "center" }}>
               {this.state.image_link != null ? (
                 <Image
                   src={url_media_local + this.state.image_link}
-                  align="center"
                   width={250}
                   height={250}
                   alt="foto"
@@ -151,7 +130,7 @@ export default class Article extends Component {
                 <></>
               )}
             </div>
-            <div>{this.state.deskripsi}</div>
+            <div style={{ textAlign: "justify" }}>{this.state.deskripsi}</div>
 
             <div>
               <h5>Apakah Artikel ini membantu?</h5>
