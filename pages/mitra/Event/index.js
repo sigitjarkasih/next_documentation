@@ -14,7 +14,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import styles from "../../../styles/Home.module.css";
 import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
-import APIEventList from "../../../config/api/Event/list";
+import APIEventList from "../../../config/api/event/list";
 import { ListSubheader } from "@mui/material";
 
 export default class Article extends Component {
@@ -31,8 +31,7 @@ export default class Article extends Component {
   }
 
   getData = async () => {
-    const resp = await APIEventList({
-    });
+    const resp = await APIEventList({});
     if (resp.status === 200) {
       this.setState({
         data: resp.data,
@@ -63,7 +62,7 @@ export default class Article extends Component {
       >
         <Head>
           <title>DGMall Syariah Help Center</title>
-          <link rel="icon" href="/logoDgmall.png" />
+          <link rel="icon" href="/LogoDgmall.png" />
         </Head>
         <Navbar />
 

@@ -30,8 +30,7 @@ export default class Article extends Component {
   }
 
   getData = async () => {
-    const resp = await APIPembeliLainnyaList({
-    });
+    const resp = await APIPembeliLainnyaList({});
     if (resp.status === 200) {
       this.setState({
         data: resp.data,
@@ -62,7 +61,7 @@ export default class Article extends Component {
       >
         <Head>
           <title>DGMall Syariah Help Center</title>
-          <link rel="icon" href="/logoDgmall.png" />
+          <link rel="icon" href="/LogoDgmall.png" />
         </Head>
         <Navbar />
 
@@ -118,7 +117,7 @@ export default class Article extends Component {
 
           <div style={{ marginLeft: 275, marginRight: 20 }}>
             <h1 align="center">{this.state.judul}</h1>
-            <div style={{textAlign:"center"}}>
+            <div style={{ textAlign: "center" }}>
               {this.state.image_link != null ? (
                 <Image
                   src={url_media_local + this.state.image_link}
@@ -130,7 +129,7 @@ export default class Article extends Component {
                 <></>
               )}
             </div>
-            <div style={{textAlign:"justify"}}>{this.state.deskripsi}</div>
+            <div style={{ textAlign: "justify" }}>{this.state.deskripsi}</div>
 
             {/* <div>
               <h5>Apakah Artikel ini membantu?</h5>

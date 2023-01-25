@@ -60,7 +60,7 @@ export default class Article extends Component {
       >
         <Head>
           <title>DGMall Syariah Help Center</title>
-          <link rel="icon" href="/logoDgmall.png" />
+          <link rel="icon" href="/LogoDgmall.png" />
         </Head>
         <Navbar />
 

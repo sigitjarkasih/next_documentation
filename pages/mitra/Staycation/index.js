@@ -30,8 +30,7 @@ export default class Article extends Component {
   }
 
   getData = async () => {
-    const resp = await APIStaycationList({
-    });
+    const resp = await APIStaycationList({});
     if (resp.status === 200) {
       this.setState({
         data: resp.data,
@@ -62,7 +61,7 @@ export default class Article extends Component {
       >
         <Head>
           <title>DGMall Syariah Help Center</title>
-          <link rel="icon" href="/logoDgmall.png" />
+          <link rel="icon" href="/LogoDgmall.png" />
         </Head>
         <Navbar />
 

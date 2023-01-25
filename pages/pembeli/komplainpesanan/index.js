@@ -29,9 +29,8 @@ export default class Article extends Component {
     };
   }
 
-  getData = async () => { 
-    const resp = await APIPembeliKomplainList({
-    });
+  getData = async () => {
+    const resp = await APIPembeliKomplainList({});
     if (resp.status === 200) {
       this.setState({
         data: resp.data,
@@ -51,7 +50,6 @@ export default class Article extends Component {
 
   componentDidMount() {
     this.getData();
-
   }
 
   render() {
@@ -63,7 +61,7 @@ export default class Article extends Component {
       >
         <Head>
           <title>DGMall Syariah Help Center</title>
-          <link rel="icon" href="/logoDgmall.png" />
+          <link rel="icon" href="/LogoDgmall.png" />
         </Head>
         <Navbar />
 
