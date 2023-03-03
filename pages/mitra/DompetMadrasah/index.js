@@ -129,7 +129,9 @@ export default class Article extends Component {
                 <></>
               )}
             </div>
-            <div style={{ textAlign: "justify" }}>{this.state.deskripsi}</div>
+            <Box style={{ textAlign: "justify" }} whiteSpace="pre-wrap">
+              {this.state.deskripsi}
+            </Box>
 
             <div>
               <h5>Apakah Artikel ini membantu?</h5>

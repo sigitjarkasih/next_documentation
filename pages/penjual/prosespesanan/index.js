@@ -129,8 +129,9 @@ export default class Article extends Component {
                 <></>
               )}
             </div>
-            <div style={{ textAlign: "justify" }}>{this.state.deskripsi}</div>
-
+            <Box style={{ textAlign: "justify" }} whiteSpace="pre-wrap">
+              {this.state.deskripsi}
+            </Box>
             {/* <div>
               <h5>Apakah Artikel ini membantu?</h5>
               <MenuItem>
@@ -236,11 +237,11 @@ export default class Article extends Component {
               <div>
                 <h3> Hubungi Kami</h3>
 
-                <a href="https://wa.me/6281294999804">
+                <a href="https://wa.me/6281294999804?text=Assalamu'alaikum admin DGMall Syariah saya mau tanya sesuatu nih" target="_blank" noreferrer>
                   WhatsApp : +62 812-9499-9804
                 </a>
                 <br />
-                <a>Email : marketing@dgpmall.com</a>
+                <a href="mailto:rizalam708@gmail.com" target="_blank" noreferrer>Email : marketing@dgpmall.com</a>
                 <br />
                 <a>Nomor Telpon : (021) 27874784</a>
               </div>
